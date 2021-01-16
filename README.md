@@ -1,1 +1,0 @@
-# h-gal2242.github.io
