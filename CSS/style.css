@@ -25,6 +25,10 @@ li {
 	list-style-type: none;
 }
 
+#mail {
+	font-size: 17px;
+}
+
 .wrapper
 {
 	width: 100%;
@@ -50,7 +54,7 @@ li {
 }
 
 .tile1, .tile2, .tile3 {
-	background-color: yellow;
+	background-color: #383838;
 	width: 300px;
 	height: 300px;
 	border-radius: 15px;
