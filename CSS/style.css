@@ -15,10 +15,14 @@
 
 body
 {
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	color: white;
 	font-family: 'IBM Plex Mono', monospace;
 	margin: 0 !important;
+}
+
+li {
+	list-style-type: none;
 }
 
 .wrapper
@@ -34,11 +38,38 @@ body
 
 .content
 {
+	background-color: #38383860;
 	width: 1000px;
+	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
+	text-align: center;
 	padding: 20px;
+	border-radius: 15px;
+	font-size: 25px
+}
+
+.tile1, .tile2, .tile3 {
+	background-color: yellow;
+	width: 300px;
+	height: 300px;
+	border-radius: 15px;
+}
+
+.tile1 {
+	margin-left: 25px;
+	margin-right: 25px;
+	float: left;
+}
+
+.tile2 {
+	margin-right: 25px;
+	float: left;
+}
+
+.tile3 {
+	margin-right: 25px;
+	float: left;
 }
 
 #menu
@@ -51,7 +82,8 @@ body
 	width: 70%;
 	text-align: center;
 	font-size: 28px;
-	background-color: #0e0e0e;
+	background-color: #222121;
+	border-radius: 15px;
 }
 #menu > ol
 {
@@ -59,7 +91,6 @@ body
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0e0e0e;
 }
 #menu > ol > li
 {
@@ -69,7 +100,6 @@ body
 {
     display: block;
     padding: 14px 16px;
-    background-color: #0e0e0e;
     text-decoration: none;
     color: white;
 }
@@ -101,18 +131,19 @@ a
 	color: white;
 	font-size: 100px;
 	margin: 0 auto;
-	width: 700px;
+	width: 500px;
 }
   
   /* Real glitch effect */
 .glitch 
 {
 	position: relative;
+	
 }
   
 .glitch:after
 {
-	animation: glitch-animation 5s infinite linear alternate-reverse;
+	animation: glitch-animation 7s infinite linear alternate-reverse;
 	background: black;
 	clip: rect( 0, 900px, 0, 0 );
 	color: white;
@@ -122,11 +153,12 @@ a
 	position: absolute;
 	text-shadow: -1px 0 red;
 	top: 0;
+	
 }
 
 .glitch:before 
 {
-	animation: glitch-animation-2 7s infinite linear alternate-reverse;
+	animation: glitch-animation-2 9s infinite linear alternate-reverse;
 	background: black;
 	clip: rect( 0, 900px, 0, 0 );
 	color: white;
